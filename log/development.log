@@ -412,3 +412,49 @@ Processing PostsController#create (for 127.0.0.1 at 2009-09-10 15:41:44) [POST]
 Rendering template within layouts/posts
 Rendering posts/new
 Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-13 15:30:36) [GET]
+Rendering home/index
+Completed in 164ms (View: 161, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-13 15:30:37) [GET]
+  [4;36;1mPost Load (1.1ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 85ms (View: 41, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-13 15:30:39) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 67ms (View: 21, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-13 15:30:43) [GET]
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 46ms (View: 3, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090910123439)
+Migrating to CreateComments (20090913123509)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar(255), "body" text, "post_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090913123509')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("posts")[0m
