@@ -1,2 +1,0 @@
-Hello Rails
-<%= link_to "My Blog", posts_path %>
