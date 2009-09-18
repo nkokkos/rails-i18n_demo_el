@@ -1588,3 +1588,683 @@ Migrating to CreatePosts (20090910123439)
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 09:54:09) [GET]
+Rendering home/index
+Completed in 234ms (View: 234, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 09:54:14) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: posts: SELECT * FROM "posts" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: posts: SELECT * FROM "posts" ):
+  app/controllers/posts_controller.rb:5:in `index'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090910123439)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "title" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090910123439')[0m
+Migrating to CreateComments (20090913123509)
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "commenter" varchar(255), "body" text, "post_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090913123509')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 09:55:06) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1688ms (View: 1625, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 09:55:11) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 09:55:13) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 09:55:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 09:55:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 09:55:26) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"eee", "title"=>"eeee", "content"=>"eeee"}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 156ms (View: 94, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 09:55:29) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"eee", "title"=>"eeee", "content"=>"eeeeeee"}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 09:55:32) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"eeeeee", "title"=>"eeee", "content"=>"eeeeeee"}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 09:55:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"eeeeeeee", "title"=>"eeeeee", "content"=>"eeeeeee"}}
+  [4;35;1mPost Create (16.0ms)[0m   [0mINSERT INTO "posts" ("name", "updated_at", "title", "content", "created_at") VALUES('eeeeeeee', '2009-09-18 06:55:38', 'eeeeee', 'eeeeeee', '2009-09-18 06:55:38')[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 250ms (DB: 16) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 09:55:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (15.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 78ms (View: 47, DB: 15) | 200 OK [http://localhost/posts/1]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 09:55:40) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/1/comments]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 09:55:48) [GET]
+  [4;35;1mPost Load (16.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2009-09-18 09:55:51) [DELETE]
+  Parameters: {"authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;35;1mPost Destroy (0.0ms)[0m   [0mDELETE FROM "posts" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/posts/1]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 09:55:51) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 09:55:57) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 09:55:59) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 09:56:04) [GET]
+Rendering home/index
+Completed in 140ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 09:56:06) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 78ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 09:56:16) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 109ms (View: 0, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 09:56:17) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 204ms (View: 188, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 09:58:19) [GET]
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `home_path' for #<ActionView::Base:0x48d7a80>) on line #5 of app/views/home/index.html.erb:
+2: <br>
+3: 
+4: <%= link_to "My Blog", posts_path %>
+5: <%= link_to "Home", home_path %>
+
+    app/views/home/index.html.erb:5
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:00:36) [GET]
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:00:37) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+
+ActionView::TemplateError (undefined local variable or method `home' for #<ActionView::Base:0x4756f1c>) on line #25 of app/views/posts/index.html.erb:
+22: <br />
+23: 
+24: <%= link_to 'New post', new_post_path %>
+25: <%= link_to "Home", home/index %>
+
+    app/views/posts/index.html.erb:25
+    app/controllers/posts_controller.rb:7:in `index'
+
+Rendered rescues/_trace (312.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:01:37) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:02:33) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:02:34) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:02:35) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:02:36) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 10:02:37) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:02:39) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 10:02:41) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:02:43) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:10:29) [GET]
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:10:31) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 10:10:33) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 187ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 10:10:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"fffff", "title"=>"fffff", "content"=>"fffff"}}
+  [4;35;1mPost Create (0.0ms)[0m   [0mINSERT INTO "posts" ("name", "updated_at", "title", "content", "created_at") VALUES('fffff', '2009-09-18 07:10:38', 'fffff', 'fffff', '2009-09-18 07:10:38')[0m
+Redirected to http://localhost:3000/posts/2
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:10:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:10:40) [GET]
+  Parameters: {"post_id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:10:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:10:53) [GET]
+  Parameters: {"post_id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:10:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:10:56) [GET]
+  Parameters: {"post_id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:10:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:10:58) [GET]
+  Parameters: {"post_id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/2/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:10:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 125ms (View: 94, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 10:11:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/2/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-09-18 10:11:03) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"fffff", "title"=>"fffff", "content"=>"fffff"}, "id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Redirected to http://localhost:3000/posts/2
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/posts/2]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:11:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 2) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/2]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:11:05) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2009-09-18 10:11:07) [DELETE]
+  Parameters: {"authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "id"=>"2"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 2) [0m
+  [4;36;1mPost Destroy (0.0ms)[0m   [0;1mDELETE FROM "posts" WHERE "id" = 2[0m
+Redirected to http://localhost:3000/posts
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/posts/2]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:11:08) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:11:09) [GET]
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:11:10) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 10:11:11) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 10:11:12) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 10:17:28) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 10:17:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"dddddd", "title"=>"dddd", "content"=>"ddddddd"}}
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 10:17:37) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"dddddddd", "title"=>"dddddd", "content"=>"ddddddd"}}
+  [4;35;1mPost Create (0.0ms)[0m   [0mINSERT INTO "posts" ("name", "updated_at", "title", "content", "created_at") VALUES('dddddddd', '2009-09-18 07:17:37', 'dddddd', 'ddddddd', '2009-09-18 07:17:37')[0m
+Redirected to http://localhost:3000/posts/3
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:17:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:17:39) [GET]
+  Parameters: {"post_id"=>"3"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/3/comments]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-09-18 10:17:41) [GET]
+  Parameters: {"post_id"=>"3"}
+  [4;36;1mPost Load (15.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering comments/new
+Completed in 63ms (View: 16, DB: 15) | 200 OK [http://localhost/posts/3/comments/new]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-09-18 10:17:45) [POST]
+  Parameters: {"commit"=>"Create", "post_id"=>"3", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "comment"=>{"body"=>"dddddd", "commenter"=>"ddddd"}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+  [4;36;1mComment Create (0.0ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "post_id", "commenter", "created_at") VALUES('2009-09-18 07:17:45', 'dddddd', 3, 'ddddd', '2009-09-18 07:17:45')[0m
+Redirected to http://localhost:3000/posts/3/comments/1
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/posts/3/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-09-18 10:17:45) [GET]
+  Parameters: {"post_id"=>"3", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 3)) [0m
+Rendering comments/show
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/3/comments/1]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-09-18 10:17:51) [GET]
+  Parameters: {"post_id"=>"3", "id"=>"1"}
+  [4;35;1mPost Load (15.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 3)) [0m
+Rendering comments/edit
+Completed in 172ms (View: 125, DB: 15) | 200 OK [http://localhost/posts/3/comments/1/edit]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:17:54) [GET]
+  Parameters: {"post_id"=>"3"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 140ms (View: 46, DB: 0) | 200 OK [http://localhost/posts/3/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:17:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 203ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 10:20:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/3/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-09-18 10:20:04) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"dddddddd", "title"=>"dddddd", "content"=>"ddddddd"}, "id"=>"3"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Redirected to http://localhost:3000/posts/3
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/posts/3]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:20:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 3) [0m
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/3]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-18 10:20:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mPost Load (16.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 3) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+Completed in 47ms (View: 15, DB: 16) | 200 OK [http://localhost/posts/3/edit]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:20:08) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-18 10:20:41) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-18 10:20:42) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-18 10:20:43) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-18 10:20:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "post"=>{"name"=>"dddddd", "title"=>"dddddd", "content"=>"ddddddddddddddd"}}
+  [4;36;1mPost Create (0.0ms)[0m   [0;1mINSERT INTO "posts" ("name", "updated_at", "title", "content", "created_at") VALUES('dddddd', '2009-09-18 07:20:51', 'dddddd', 'ddddddddddddddd', '2009-09-18 07:20:51')[0m
+Redirected to http://localhost:3000/posts/4
+Completed in 93ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:20:51) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 4) [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/4]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:20:52) [GET]
+  Parameters: {"post_id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 4) [0m
+Completed in 203ms (View: 0, DB: 0) | 200 OK [http://localhost/posts/4/comments]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-09-18 10:20:53) [GET]
+  Parameters: {"post_id"=>"4"}
+  [4;35;1mPost Load (16.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering comments/new
+Completed in 63ms (View: 0, DB: 16) | 200 OK [http://localhost/posts/4/comments/new]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-09-18 10:20:57) [POST]
+  Parameters: {"commit"=>"Create", "post_id"=>"4", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "comment"=>{"body"=>"dddddddd", "commenter"=>"dddddd"}}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+  [4;35;1mComment Create (0.0ms)[0m   [0mINSERT INTO "comments" ("updated_at", "body", "post_id", "commenter", "created_at") VALUES('2009-09-18 07:20:57', 'dddddddd', 4, 'dddddd', '2009-09-18 07:20:57')[0m
+Redirected to http://localhost:3000/posts/4/comments/2
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/posts/4/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-09-18 10:20:57) [GET]
+  Parameters: {"post_id"=>"4", "id"=>"2"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 2 AND ("comments".post_id = 4)) [0m
+Rendering comments/show
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/4/comments/2]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:20:59) [GET]
+  Parameters: {"post_id"=>"4"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 4) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/4/comments]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-09-18 10:21:01) [GET]
+  Parameters: {"post_id"=>"4"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering comments/new
+Completed in 63ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/4/comments/new]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-09-18 10:21:05) [POST]
+  Parameters: {"commit"=>"Create", "post_id"=>"4", "authenticity_token"=>"SuCaT6rOgudfhmwoAtv5Dz7c0EpMwcJGaguIPDfOYWI=", "comment"=>{"body"=>"asd fasdf ", "commenter"=>"dddsdafsd"}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+  [4;36;1mComment Create (0.0ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "post_id", "commenter", "created_at") VALUES('2009-09-18 07:21:05', 'asd fasdf ', 4, 'dddsdafsd', '2009-09-18 07:21:05')[0m
+Redirected to http://localhost:3000/posts/4/comments/3
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/posts/4/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-09-18 10:21:05) [GET]
+  Parameters: {"post_id"=>"4", "id"=>"3"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 3 AND ("comments".post_id = 4)) [0m
+Rendering comments/show
+Completed in 47ms (View: 0, DB: 0) | 200 OK [http://localhost/posts/4/comments/3]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-18 10:21:11) [GET]
+  Parameters: {"post_id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 4) [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/4/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-18 10:21:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 4) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 4) [0m
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/4]

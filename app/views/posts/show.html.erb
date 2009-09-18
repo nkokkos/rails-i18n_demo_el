@@ -15,13 +15,16 @@
 
 <h2>Comments</h2> 
 <% @post.comments.each do |c| %>  
+
 <p> <b>Commenter:</b>  
-<%=h c.commenter %>  
+  <%=h c.commenter %>  
 </p>  
+
 <p>  
-<b>Comment:</b>  
-<%=h c.body %>  
+  <b>Comment:</b>   
+  <%=h c.body %>  
 </p> 
+
 <% end %> 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
