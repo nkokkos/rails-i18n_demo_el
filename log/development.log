@@ -43,3 +43,381 @@ Migrating to AddLanguageOptionToComments (20090921125024)
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("posts")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-21 15:57:33) [GET]
+Rendering home/index
+Completed in 125ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-21 15:57:34) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 1453ms (View: 1343, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-21 15:57:37) [GET]
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-21 15:57:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"wIXS21vizH/ybskyIXEJIXmvsIuxqM7uTK/PnaNX+Rw=", "post"=>{"name"=>"eeeeeeeeeeee", "title"=>"eeeeeeeeeeee", "content"=>"eeeeeeeeeeeeeeeeee"}}
+  [4;35;1mPost Create (0.0ms)[0m   [0mINSERT INTO "posts" ("name", "updated_at", "title", "content", "created_at") VALUES('eeeeeeeeeeee', '2009-09-21 12:57:43', 'eeeeeeeeeeee', 'eeeeeeeeeeeeeeeeee', '2009-09-21 12:57:43')[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-21 15:57:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-21 15:57:44) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 109ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/1/comments]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-09-21 15:57:45) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/new
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/1/comments/new]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-09-21 15:57:54) [POST]
+  Parameters: {"commit"=>"Create", "post_id"=>"1", "authenticity_token"=>"wIXS21vizH/ybskyIXEJIXmvsIuxqM7uTK/PnaNX+Rw=", "comment"=>{"body"=>"eeeeeeeeeeeeeeeeeee", "commenter"=>"eee"}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Create (15.0ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "language", "post_id", "commenter", "created_at") VALUES('2009-09-21 12:57:54', 'eeeeeeeeeeeeeeeeeee', NULL, 1, 'eee', '2009-09-21 12:57:54')[0m
+Redirected to http://localhost:3000/posts/1/comments/1
+Completed in 110ms (DB: 15) | 302 Found [http://localhost/posts/1/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-09-21 15:57:54) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/show
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/1/comments/1]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-09-21 15:57:56) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/edit
+Completed in 79ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/1/comments/1/edit]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-21 15:57:59) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/1/comments]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-09-21 15:58:05) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/edit
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/1/comments/1/edit]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-09-21 15:58:07) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/posts/1/comments/1]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-21 16:00:58) [GET]
+Rendering home/index
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-21 16:01:00) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 125ms (View: 62, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-21 16:01:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-21 16:01:09) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/1/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-09-21 16:01:11) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/show
+Completed in 125ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/1/comments/1]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-09-21 16:01:16) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/edit
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/1/comments/1/edit]
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-09-21 16:01:17) [PUT]
+  Parameters: {"commit"=>"Update", "post_id"=>"1", "authenticity_token"=>"wIXS21vizH/ybskyIXEJIXmvsIuxqM7uTK/PnaNX+Rw=", "id"=>"1", "comment"=>{"body"=>"eeeeeeeeeeeeeeeeeee", "commenter"=>"eee"}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1) [0m
+Redirected to http://localhost:3000/posts/1/comments/1
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/posts/1/comments/1]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-09-21 16:01:17) [GET]
+  Parameters: {"post_id"=>"1", "id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 1 AND ("comments".post_id = 1)) [0m
+Rendering comments/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/1/comments/1]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-21 16:01:19) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 219ms (View: 188, DB: 0) | 200 OK [http://localhost/posts/1/comments]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-09-21 16:01:22) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/1/comments/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090910123439)
+Migrating to CreateComments (20090913123509)
+Migrating to AddLanguageOptionToComments (20090921125024)
+Migrating to CreateLanguages (20090921131108)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE "languages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "language_code" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090921131108')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("languages")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-21 16:12:48) [GET]
+Rendering home/index
+Completed in 172ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-21 16:12:54) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 125ms (View: 63, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-09-21 16:13:02) [GET]
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Rendering template within layouts/languages
+Rendering languages/index
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2009-09-21 16:13:06) [GET]
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/languages/new]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-09-21 16:13:08) [GET]
+  [4;36;1mLanguage Load (15.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Rendering template within layouts/languages
+Rendering languages/index
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/languages]
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2009-09-21 16:13:11) [GET]
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/languages/new]
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2009-09-21 16:13:18) [POST]
+  Parameters: {"commit"=>"Create", "language"=>{"name"=>"Greek", "language_code"=>"el"}, "authenticity_token"=>"wIXS21vizH/ybskyIXEJIXmvsIuxqM7uTK/PnaNX+Rw="}
+  [4;35;1mLanguage Create (0.0ms)[0m   [0mINSERT INTO "languages" ("name", "updated_at", "language_code", "created_at") VALUES('Greek', '2009-09-21 13:13:18', 'el', '2009-09-21 13:13:18')[0m
+Redirected to http://localhost:3000/languages/1
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/languages]
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2009-09-21 16:13:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" WHERE ("languages"."id" = 1) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/languages/1]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-09-21 16:13:21) [GET]
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Rendering template within layouts/languages
+Rendering languages/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2009-09-21 16:13:22) [GET]
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/languages/new]
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2009-09-21 16:13:28) [POST]
+  Parameters: {"commit"=>"Create", "language"=>{"name"=>"Italian", "language_code"=>"it"}, "authenticity_token"=>"wIXS21vizH/ybskyIXEJIXmvsIuxqM7uTK/PnaNX+Rw="}
+  [4;36;1mLanguage Create (0.0ms)[0m   [0;1mINSERT INTO "languages" ("name", "updated_at", "language_code", "created_at") VALUES('Italian', '2009-09-21 13:13:28', 'it', '2009-09-21 13:13:28')[0m
+Redirected to http://localhost:3000/languages/2
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/languages]
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2009-09-21 16:13:28) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" WHERE ("languages"."id" = 2) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/languages/2]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-09-21 16:13:30) [GET]
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Rendering template within layouts/languages
+Rendering languages/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2009-09-21 16:13:31) [GET]
+Rendering template within layouts/languages
+Rendering languages/new
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/languages/new]
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2009-09-21 16:13:40) [POST]
+  Parameters: {"commit"=>"Create", "language"=>{"name"=>"Spanish", "language_code"=>"es"}, "authenticity_token"=>"wIXS21vizH/ybskyIXEJIXmvsIuxqM7uTK/PnaNX+Rw="}
+  [4;35;1mLanguage Create (0.0ms)[0m   [0mINSERT INTO "languages" ("name", "updated_at", "language_code", "created_at") VALUES('Spanish', '2009-09-21 13:13:40', 'es', '2009-09-21 13:13:40')[0m
+Redirected to http://localhost:3000/languages/3
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/languages]
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2009-09-21 16:13:40) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" WHERE ("languages"."id" = 3) [0m
+Rendering template within layouts/languages
+Rendering languages/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/languages/3]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-09-21 16:13:41) [GET]
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Rendering template within layouts/languages
+Rendering languages/index
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-21 16:13:52) [GET]
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-21 16:13:53) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-21 16:22:52) [GET]
+Rendering home/index
+Completed in 172ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-21 16:22:54) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 125ms (View: 63, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-09-21 16:22:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/posts/1]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-09-21 16:22:58) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 1) [0m
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/1/comments]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-09-21 16:23:00) [GET]
+  Parameters: {"post_id"=>"1"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Rendering comments/new
+
+ActionView::TemplateError (wrong number of arguments (1 for 3)) on line #19 of app/views/comments/new.html.erb:
+16: 
+17:   <p> <%= f.label :language %> <br />
+18:       <%=f.text_field :language %>
+19:       <%= select(:languages) %>
+20:   </p>
+21: 
+22:   <p>  
+
+    app/views/comments/new.html.erb:19:in `select'
+    app/views/comments/new.html.erb:19
+    app/views/comments/new.html.erb:4
+
+Rendered rescues/_trace (344.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)

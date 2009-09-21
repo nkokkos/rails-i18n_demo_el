@@ -13,6 +13,7 @@ def show
 def new 
     @post = Post.find(params[:post_id])  
     @comment = @post.comments.build 
+    @languages = Language.find(:all)
   end  
   
   def create 

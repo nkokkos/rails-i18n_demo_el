@@ -8,7 +8,11 @@
 <p>  
 <b>Comment:</b>  
   <%=h @comment.body %> 
-</p> 
+</p>
+<p>
+<b>Language:</b>
+ <%=h @comment.language %>
+ </p>
 
 <%= link_to 'Edit', edit_post_comment_path(@post, @comment) %> 
 <%= link_to 'Back', post_comments_path(@post) %> 
