@@ -10,7 +10,12 @@
   
   <p>  <%= f.label :body %><br />  
     <%= f.text_area :body %>  
-  </p>  
+  </p>
+
+   <p>
+    <%= f.label :language, "Language" %><br />
+    <%= select(:comment, :language, Language.all.collect {|p| [ p.name, p.language_code ] }, { :include_blank => true }) %>
+  </p>
   
   <p>  
     <%= f.submit "Update" %>  

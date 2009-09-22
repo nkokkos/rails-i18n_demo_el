@@ -14,8 +14,9 @@
     <%= f.text_area :body %>  
   </p>  
 
-  <p> <%= f.label :language %> <br />
-      <%=f.text_field :language %>
+ <p>
+    <%= f.label :language, "Language" %><br />
+    <%= f.select(:language,@languages) %>
   </p>
 
   <p>  

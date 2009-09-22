@@ -13,7 +13,10 @@ def show
 def new 
     @post = Post.find(params[:post_id])  
     @comment = @post.comments.build 
-    @languages = Language.find(:all)
+    
+    #from agile developement with rails book..
+    # loop through the languages in the language table and create an array  with [name and language code]
+    @languages = Language.find(:all, :order => "name" ).map {|u| [u.name, u.language_code] }
   end  
   
   def create 
@@ -28,7 +31,7 @@ def new
   
    def edit 
         @post = Post.find(params[:post_id])
-        @comment = @post.comments.find(params[:id])  
+        @comment = @post.comments.find(params[:id])
    end  
       
       def update 
