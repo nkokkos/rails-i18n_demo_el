@@ -47,9 +47,12 @@ def new
       def destroy 
         @post = Post.find(params[:post_id])  
         @comment = Comment.find(params[:id])  
-        @comment.destroy respond_to do |format|
+        @comment.destroy 
+        
+        respond_to do |format|
           format.html { redirect_to post_comments_path(@post) } 
           format.xml { head :ok } 
+        
         end  
       end 
       
