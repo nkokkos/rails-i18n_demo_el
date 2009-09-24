@@ -1,0 +1,95 @@
+commit aa8715336b7579c771dc17b8f99b7765b75d58be
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Wed Sep 23 12:57:26 2009 +0300
+
+    Fixed error in comments controller (previously on delete, it crashed)
+
+commit bcc3d7699c399d4462d1020c9dd4c66f653dc2d9
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Wed Sep 23 12:17:54 2009 +0300
+
+    Always before commit, I migrate database to version 0
+
+commit 44d2554e1c1f18d6379858e17e86cd64f364337f
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Tue Sep 22 14:01:50 2009 +0300
+
+    Added select option for languages in Comments controller
+
+commit eb1fcaf5610b2fd1ccf0794bbf501356fe6cf173
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Mon Sep 21 16:34:59 2009 +0300
+
+    Added languages table
+
+commit edee397f9c43a3aa1c1956fbbac9cb252b46d7c7
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Mon Sep 21 15:53:22 2009 +0300
+
+    Added migration to add language field to comments
+
+commit cd91a2d5e47c5947e9bb367a42e65e3c1a42f0d2
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Fri Sep 18 10:36:55 2009 +0300
+
+    Cleared /log/*
+
+commit 723ee09304436724799f2fc2a8c70dbc32b9aaa3
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Fri Sep 18 10:29:55 2009 +0300
+
+    Modified README_FOR_APP
+
+commit 30b65f953e7990117b491cecf2e3d5e36a3c0c75
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Fri Sep 18 10:26:48 2009 +0300
+
+    Migrated database to version 0
+
+commit 1a419f2d72c6eb952b26b81c68cf519008d49433
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Fri Sep 18 10:25:27 2009 +0300
+
+    Added index, show, edit, new views for comments
+
+commit 261e894ea70a293fc09ad5e476b2461a63d84b1e
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Thu Sep 17 17:26:26 2009 +0300
+
+    Added Comments controller. Need to build views for comments next.
+
+commit 865ef1674057cf7bd8b6e954b4d05fc8790964ac
+Merge: 3f5895b fb9a80c
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Wed Sep 16 18:24:20 2009 +0300
+
+    Merge github.com:nkokkos/rails-i18n_demo_el
+    
+    Conflicts:
+    	db/development.sqlite3
+    	db/schema.rb
+    	log/development.log
+
+commit 3f5895b7b8a45b350a10003c1d10b30e5d62e7c9
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Wed Sep 16 18:18:35 2009 +0300
+
+    Added Comment model and references to post
+
+commit fb9a80c54ff53948b63ceb860fb14cf35d4c0fe5
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Mon Sep 14 00:08:23 2009 +0300
+
+    Added the comments controller and views..
+
+commit 8db22d44f8f5798ba81c0278437e303501015fd2
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Sun Sep 13 15:37:19 2009 +0300
+
+    Added the comments model
+
+commit e8792a50dbdb44283d06514e317b2f17de80df43
+Author: Nick Kokkos <nkokkos@gmail.com>
+Date:   Thu Sep 10 15:44:45 2009 +0300
+
+    first commit
