@@ -1115,3 +1115,285 @@ Migrating to CreateLanguages (20090921131108)
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("comments")[0m
   [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("languages")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090910123439)
+Migrating to CreateComments (20090913123509)
+Migrating to AddLanguageOptionToComments (20090921125024)
+Migrating to CreateLanguages (20090921131108)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("languages")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-27 18:15:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 133ms (View: 108, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-27 18:15:47) [GET]
+  [4;36;1mPost Load (3.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 83ms (View: 35, DB: 4) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-09-27 18:15:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 60ms (View: 40, DB: 1) | 200 OK [http://localhost/posts/1/edit]
+
+
+Processing PostsController#1 (for 127.0.0.1 at 2009-09-27 18:15:54) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "id"=>"edit", "locale"=>"el"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, set_locale, show, and update):
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#1 (for 127.0.0.1 at 2009-09-27 18:16:10) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "id"=>"edit", "locale"=>"en"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, set_locale, show, and update):
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+  /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+  /usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-27 18:16:44) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 36, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-27 18:16:47) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 35ms (View: 21, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-27 18:16:55) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 40ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-27 18:16:58) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 27ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-27 18:17:01) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 103ms (View: 39, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:17:06) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"name"=>"dddd", "title"=>"", "content"=>""}, "authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI="}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 93ms (View: 40, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-27 18:19:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 52ms (View: 49, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-27 18:19:40) [GET]
+  [4;36;1mPost Load (1.6ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 164ms (View: 39, DB: 2) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-27 18:19:42) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 60ms (View: 24, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:19:44) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"name"=>"", "title"=>"", "content"=>""}, "authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI="}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 94ms (View: 37, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-09-27 18:25:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 54ms (View: 50, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-09-27 18:25:06) [GET]
+  [4;36;1mPost Load (1.5ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 175ms (View: 47, DB: 1) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-09-27 18:25:08) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 83ms (View: 29, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:25:10) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"name"=>"", "title"=>"", "content"=>""}, "authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI="}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 88ms (View: 56, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:25:37) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 218ms (View: 181, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:25:40) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 122ms (View: 69, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:25:43) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 108ms (View: 43, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:25:46) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 116ms (View: 69, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:26:15) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 83ms (View: 69, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:26:17) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 316ms (View: 282, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:26:20) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 126ms (View: 89, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:26:22) [POST]
+  Parameters: {"authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 83ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:26:26) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"name"=>"kskksksks", "title"=>"", "content"=>""}, "authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI="}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 89ms (View: 34, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-09-27 18:26:34) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"name"=>"kskksksksss", "title"=>"sss", "content"=>""}, "authenticity_token"=>"DrZOLIMBoVI80Wyh5SmEl0nShx5xoj+GWONeM8kmVfI="}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 83ms (View: 32, DB: 0) | 200 OK [http://localhost/posts]

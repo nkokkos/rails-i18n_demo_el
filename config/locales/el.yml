@@ -115,21 +115,14 @@
       sentence_connector: "και"
       skip_last_comma: false
   
-      
   activerecord:
     errors:
       template:
         header:
-          one:    "1 λάθος παρεμπόδισε αυτό το {{model}} να αποθηκευθεί"
-          other:  "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
+          one: "1 λάθος παρεμπόδισε αυτό το {{model}} να αποθηκευθεί"
+          other: "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
         # The variable :count is also available
         body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία :"
-
-
-  activerecord:
-    errors:
-      # The values :model, :attribute and :value are always available for interpolation
-      # The value :count is available when applicable. Can be used for pluralization.
       messages:
         inclusion: "δεν συμπεριλαβάνεται στη λίστα"
         exclusion: "είναι δεσμευμένο"
@@ -150,7 +143,8 @@
         less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσον με {{count}}"
         odd: "πρέπει να είναι περιττός"
         even: "πρέπει να είναι άρτιος"
-        # Append your own errors here or at the model/attributes scope.
+        
+     # Append your own errors here or at the model/attributes scope.
 
       # You can define own errors for models or model attributes.
       # The values :model, :attribute and :value are always available for interpolation.
