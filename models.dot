@@ -1,7 +1,0 @@
-digraph models_diagram {
-	graph[overlap=false, splines=true]
-	"Comment" [shape=Mrecord, label="{Comment|commenter :string\lbody :text\lcreated_at :datetime\lupdated_at :datetime\llanguage :string\l}"]
-	"Language" [shape=Mrecord, label="{Language|name :string\llanguage_code :string\lcreated_at :datetime\lupdated_at :datetime\l}"]
-	"Post" [shape=Mrecord, label="{Post|name :string\ltitle :string\lcontent :text\lcreated_at :datetime\lupdated_at :datetime\l}"]
-	"Post" -> "Comment" [arrowtail=crow, arrowhead=dot, dir=both]
-}
