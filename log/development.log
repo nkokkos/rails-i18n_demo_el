@@ -1093,3 +1093,25 @@ Processing PostsController#create (for 127.0.0.1 at 2009-09-27 17:14:56) [POST]
 Rendering template within layouts/application
 Rendering posts/new
 Completed in 59ms (View: 40, DB: 0) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (1.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090910123439)
+Migrating to CreateComments (20090913123509)
+Migrating to AddLanguageOptionToComments (20090921125024)
+Migrating to CreateLanguages (20090921131108)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("comments")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("languages")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("posts")[0m
