@@ -1,14 +1,13 @@
 # Greek translations for Ruby on Rails
 # by Nick Kokkos (nkokkos@gmail.com)
 
-# I tested translation functionality using 
+#  Tested translation functionality using 
 # "Localized Rails demo application"  by 
-# Clemens Kofler @ http://github.com/clemens/i18n_demo_app
-
+#  Clemens Kofler @ http://github.com/clemens/i18n_demo_app
 
 
 "el":
-
+  
   date:
     formats:
       # Use the strftime parameters for formats.
@@ -28,8 +27,7 @@
     # Used in date_select and datime_select.
     # original was: order: [ :year, :month, :day ] 
     order: [ :day, :month, :year ]
- 
- 
+
   time:
      formats:
        default: "%a %d %b %Y, %H:%M:%S %z"
@@ -37,14 +35,13 @@
        short: "%d %b %H:%M"
        long: "%d %B %Y %H:%M"
        only_second: "%S"
- 
+
      am: "πμ"
      pm: "μμ"
-      
+
   datetime:
     formats:
       default: "%d-%m-%YT%H:%M:%S%Z"
-          
 
  # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
@@ -114,15 +111,20 @@
     array:
       sentence_connector: "και"
       skip_last_comma: false
-  
+    
   activerecord:
     errors:
       template:
         header:
-          one: "1 λάθος παρεμπόδισε αυτό το {{model}} να αποθηκευθεί"
-          other: "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
+          one:    "1 λάθος παρεμπόδισε αυτό το {{model}} να αποθηκευθεί"
+          other:  "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
         # The variable :count is also available
         body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία :"
+
+  activerecord:
+    errors:
+      # The values :model, :attribute and :value are always available for interpolation
+      # The value :count is available when applicable. Can be used for pluralization.
       messages:
         inclusion: "δεν συμπεριλαβάνεται στη λίστα"
         exclusion: "είναι δεσμευμένο"
@@ -143,8 +145,7 @@
         less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσον με {{count}}"
         odd: "πρέπει να είναι περιττός"
         even: "πρέπει να είναι άρτιος"
-        
-     # Append your own errors here or at the model/attributes scope.
+        # Append your own errors here or at the model/attributes scope.
 
       # You can define own errors for models or model attributes.
       # The values :model, :attribute and :value are always available for interpolation.
@@ -172,5 +173,3 @@
       #   user:
       #     login: "Handle"
       # will translate User attribute "login" as "Handle"
-
-
