@@ -5,8 +5,7 @@
 # "Localized Rails demo application"  by 
 #  Clemens Kofler @ http://github.com/clemens/i18n_demo_app
 
-
-"el":
+el:
   
   date:
     formats:
@@ -111,20 +110,18 @@
     array:
       sentence_connector: "και"
       skip_last_comma: false
-    
-  activerecord:
-    errors:
-      template:
-        header:
-          one:    "1 λάθος παρεμπόδισε αυτό το {{model}} να αποθηκευθεί"
-          other:  "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
-        # The variable :count is also available
-        body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία :"
 
   activerecord:
     errors:
       # The values :model, :attribute and :value are always available for interpolation
       # The value :count is available when applicable. Can be used for pluralization.
+      template:
+        header:
+          one: "1 λάθος παρεμπόδισε αυτό το {{model}} να αποθηκευθεί"
+          other: "{{count}} λάθη εμπόδισαν αυτό το {{model}} να αποθηκευθεί"
+          #The variable :count is also available
+        body: "Υπήρξαν προβλήματα με τα ακόλουθα πεδία :"      
+
       messages:
         inclusion: "δεν συμπεριλαβάνεται στη λίστα"
         exclusion: "είναι δεσμευμένο"
