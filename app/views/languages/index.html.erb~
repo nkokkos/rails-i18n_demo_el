@@ -20,4 +20,3 @@
 <br />
 
 <%= link_to 'New language', new_language_path %>
-<%= link_to "Home", "http://localhost:3000" %>
