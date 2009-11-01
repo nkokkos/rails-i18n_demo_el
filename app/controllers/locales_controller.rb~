@@ -1,0 +1,8 @@
+class LocalesController < ApplicationController
+  
+  def show
+    session[:locale] = params[:locale] if params[:locale] # change my locality
+    redirect_to :back 
+  end
+
+end

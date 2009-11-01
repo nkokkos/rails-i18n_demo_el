@@ -1,8 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :languages
-
   
-   map.resources :posts, :has_many => :comments 
+  map.resources :languages
+  map.resources :posts, :has_many => :comments 
+  map.locales 'locales/:locale', :controller =>'locales', :action => 'show'
 
   # The priority is based upon order of creation: first created -> highest priority.
 
