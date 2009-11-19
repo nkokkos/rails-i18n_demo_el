@@ -14,10 +14,14 @@
      <%= select_tag("locale", options_for_select(LANGUAGES, I18n.locale), { :index => nil, :onchange => 'this.form.submit()'}) %>
      <% end %>
      <br>
+      session[:locale] = <%= session[:locale] %>
+     <br>
+     <br>
      Change locale with link_to function:
      <br>
-    <%= link_to "English", locales_path('en') %>
-    
+    <%= link_to_if(session[:locale]=="en","Greek", locales_path('el') ) %>
+    <%= link_to_if(session[:locale]=="el","English", locales_path('en') ) %>
+        
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <%- end -%>
