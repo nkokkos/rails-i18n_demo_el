@@ -11,11 +11,15 @@ class ApplicationController < ActionController::Base
  before_filter :set_locale
 
   def set_locale
+    
+    # set session for the very first time the app runs
+    session[:locale] = 'en' if session[:locale].nil?
+    
     # update session if passed
     session[:locale] = params[:locale] if params[:locale]
-
     # set locale based on session or default 
     I18n.locale = session[:locale] || I18n.default_locale
+  
   end
 
 end

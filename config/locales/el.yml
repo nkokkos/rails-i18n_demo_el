@@ -142,8 +142,7 @@ el:
         less_than_or_equal_to: "πρέπει να είναι λιγότερο ή ίσον με {{count}}"
         odd: "πρέπει να είναι περιττός"
         even: "πρέπει να είναι άρτιος"
-        # Append your own errors here or at the model/attributes scope.
-
+      # Append your own errors here or at the model/attributes scope.     
       # You can define own errors for models or model attributes.
       # The values :model, :attribute and :value are always available for interpolation.
       #
@@ -170,4 +169,9 @@ el:
       #   user:
       #     login: "Handle"
       # will translate User attribute "login" as "Handle"
+
+  layout:
+    edit:
+      comment: "Τροποποίηση Σχολίου"
+
 
