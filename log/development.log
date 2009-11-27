@@ -10182,3 +10182,1811 @@ Processing HomeController#index (for 127.0.0.1 at 2009-11-20 12:39:03) [GET]
 Rendering template within layouts/application
 Rendering home/index
 Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-25 10:31:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 1875ms (View: 219, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:31:08) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-25 10:31:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:31:10) [GET]
+  [4;36;1mPost Load (31.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 453ms (View: 172, DB: 31) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-25 10:31:16) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:31:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 218ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:31:21) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:31:21) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-25 10:31:25) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:31:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:31:32) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:31:32) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:31:36) [POST]
+  Parameters: {"authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:31:37) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 141ms (View: 63, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-25 10:31:39) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:31:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:31:51) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 79ms (View: 63, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:31:52) [POST]
+  Parameters: {"authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 79ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:32:04) [POST]
+  Parameters: {"authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 78ms (View: 46, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:32:17) [POST]
+  Parameters: {"authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 204ms (View: 188, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:32:19) [POST]
+  Parameters: {"authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 250ms (View: 63, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:32:29) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:32:29) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:32:33) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:32:33) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:32:34) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:32:34) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:32:35) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:32:35) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:32:36) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:32:36) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 110ms (View: 32, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:32:37) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:32:38) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:32:40) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:32:40) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-25 10:32:45) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/new]
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-25 10:32:47) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "post"=>{"name"=>"", "title"=>"", "content"=>""}}
+Rendering template within layouts/application
+Rendering posts/new
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:33:04) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:33:04) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:33:06) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:33:06) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 125ms (View: 62, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:33:07) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:33:07) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:33:08) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:33:08) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-25 10:33:09) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-11-25 10:33:10) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "post"=>{"name"=>"dddddd", "title"=>"dddddd", "content"=>"ddddd"}, "id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Redirected to http://localhost:3000/posts/5
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/posts/5]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 10:33:10) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:33:19) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 109ms (View: 46, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-25 10:33:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 156ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-11-25 10:33:40) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "post"=>{"name"=>"dddddd", "title"=>"dddddd", "content"=>"ddddd"}, "id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Redirected to http://localhost:3000/posts/5
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/posts/5]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 10:33:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:33:42) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 10:33:42) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:33:45) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 110ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:33:47) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:33:49) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 10:33:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 250ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:33:54) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-25 10:33:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-11-25 10:33:56) [GET]
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Rendering template within layouts/application
+Rendering languages/index
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2009-11-25 10:33:58) [GET]
+Rendering template within layouts/application
+Rendering languages/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/languages/new]
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2009-11-25 10:34:00) [POST]
+  Parameters: {"commit"=>"Create", "language"=>{"name"=>"", "language_code"=>""}, "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc="}
+Rendering template within layouts/application
+Rendering languages/new
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:02) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/languages
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-11-25 10:34:02) [GET]
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Rendering template within layouts/application
+Rendering languages/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing LanguagesController#new (for 127.0.0.1 at 2009-11-25 10:34:03) [GET]
+Rendering template within layouts/application
+Rendering languages/new
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/languages/new]
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2009-11-25 10:34:04) [POST]
+  Parameters: {"commit"=>"Create", "language"=>{"name"=>"", "language_code"=>""}, "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc="}
+Rendering template within layouts/application
+Rendering languages/new
+Completed in 281ms (View: 47, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing LanguagesController#create (for 127.0.0.1 at 2009-11-25 10:34:15) [POST]
+  Parameters: {"commit"=>"Create", "language"=>{"name"=>"greek", "language_code"=>"el"}, "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc="}
+  [4;36;1mLanguage Create (0.0ms)[0m   [0;1mINSERT INTO "languages" ("name", "updated_at", "language_code", "created_at") VALUES('greek', '2009-11-25 08:34:15', 'el', '2009-11-25 08:34:15')[0m
+Redirected to http://localhost:3000/languages/4
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/languages]
+
+
+Processing LanguagesController#show (for 127.0.0.1 at 2009-11-25 10:34:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" WHERE ("languages"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering languages/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/languages/4]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-11-25 10:34:18) [GET]
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Rendering template within layouts/application
+Rendering languages/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-25 10:34:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:34:21) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 10:34:23) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Load (15.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://localhost/posts/5]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:34:24) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:27) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"8"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 8 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 125ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/5/comments/8/edit]
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-11-25 10:34:31) [PUT]
+  Parameters: {"commit"=>"Update", "post_id"=>"5", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "id"=>"8", "comment"=>{"language"=>"el", "body"=>"", "commenter"=>""}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 8) [0m
+  [4;35;1mComment Update (0.0ms)[0m   [0mUPDATE "comments" SET "commenter" = '', "language" = 'el', "body" = '', "updated_at" = '2009-11-25 08:34:31' WHERE "id" = 8[0m
+Redirected to http://localhost:3000/posts/5/comments/8
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/posts/5/comments/8]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-25 10:34:31) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"8"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 8 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments/8]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:34:33) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 78ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:35) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:44) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:45) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:46) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:46) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;36;1mPost Load (16.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 250ms (View: 157, DB: 16) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:49) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:49) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Completed in 79ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:50) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:50) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:52) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:52) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:52) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:52) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:56) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:56) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;35;1mPost Load (16.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Completed in 94ms (View: 47, DB: 16) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:34:59) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments/7/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-25 10:34:59) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/5/comments/7/edit]
+
+
+Processing CommentsController#update (for 127.0.0.1 at 2009-11-25 10:35:01) [PUT]
+  Parameters: {"commit"=>"Update", "post_id"=>"5", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "id"=>"7", "comment"=>{"language"=>"", "body"=>"dddddddddddd", "commenter"=>"ddddddddddd"}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 7) [0m
+Redirected to http://localhost:3000/posts/5/comments/7
+Completed in 46ms (DB: 0) | 302 Found [http://localhost/posts/5/comments/7]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-25 10:35:01) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"7"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 7 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 63ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/5/comments/7]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:35:02) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-11-25 10:35:06) [DELETE]
+  Parameters: {"post_id"=>"5", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "id"=>"8"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 8) [0m
+  [4;35;1mComment Destroy (0.0ms)[0m   [0mDELETE FROM "comments" WHERE "id" = 8[0m
+Redirected to http://localhost:3000/posts/5/comments
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/posts/5/comments/8]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:35:06) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2009-11-25 10:35:08) [DELETE]
+  Parameters: {"post_id"=>"5", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "id"=>"7"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 7) [0m
+  [4;36;1mComment Destroy (16.0ms)[0m   [0;1mDELETE FROM "comments" WHERE "id" = 7[0m
+Redirected to http://localhost:3000/posts/5/comments
+Completed in 141ms (DB: 16) | 302 Found [http://localhost/posts/5/comments/7]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:35:08) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#new (for 127.0.0.1 at 2009-11-25 10:35:10) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering comments/new
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/5/comments/new]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-25 10:35:11) [POST]
+  Parameters: {"commit"=>"Create", "post_id"=>"5", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "comment"=>{"language"=>"el", "body"=>"", "commenter"=>""}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Create (0.0ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "language", "post_id", "commenter", "created_at") VALUES('2009-11-25 08:35:11', '', 'el', 5, '', '2009-11-25 08:35:11')[0m
+Redirected to http://localhost:3000/posts/5/comments/9
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-25 10:35:12) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"9"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 9 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/5/comments/9]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-25 10:35:17) [POST]
+  Parameters: {"commit"=>"Create", "post_id"=>"5", "authenticity_token"=>"DVpKDZV+s4CbZsXnGhchB1049eELpCpe/fQFVTSlBlc=", "comment"=>{"language"=>"el", "body"=>"dddd", "commenter"=>"ddddd"}}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Create (0.0ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "language", "post_id", "commenter", "created_at") VALUES('2009-11-25 08:35:17', 'dddd', 'el', 5, 'ddddd', '2009-11-25 08:35:17')[0m
+Redirected to http://localhost:3000/posts/5/comments/10
+Completed in 125ms (DB: 0) | 302 Found [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-25 10:35:17) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"10"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 10 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/5/comments/10]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:35:20) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 172ms (View: 109, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 10:35:27) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-25 10:35:29) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (15.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 78ms (View: 47, DB: 15) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-25 10:35:32) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:35:33) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-25 10:35:35) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-25 10:35:35) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 16:55:59) [GET]
+
+ArgumentError (syntax error on line 9, col 3: `   app:'):
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 16:58:32) [GET]
+
+ArgumentError (syntax error on line 29, col 2: `  time:'):
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 16:58:54) [GET]
+
+ArgumentError (syntax error on line 172, col 1: ` layout:'):
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+
+Rendered rescues/_trace (343.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:00:31) [GET]
+
+ArgumentError (syntax error on line 9, col 3: `   app:'):
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+  d:/Ruby/lib/ruby/1.8/yaml.rb:133:in `load'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:00:54) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 906ms (View: 906, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:01:01) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:01:03) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:01:04) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:01:05) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:07) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:09) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:10) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:12) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:14) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:18) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:26) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:01:51) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:01:56) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:01:59) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:04) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:06) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:16) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:18) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:22) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:23) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:32) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:34) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:40) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:42) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:44) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:46) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:48) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:02:50) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:02:51) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:02:52) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:02:52) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:02:54) [GET]
+  [4;36;1mPost Load (15.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 485ms (View: 235, DB: 15) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:04:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-11-27 17:04:55) [GET]
+  [4;35;1mLanguage Load (0.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Rendering template within layouts/application
+Rendering languages/index
+Completed in 125ms (View: 94, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:04:58) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:04:59) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-27 17:05:01) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing PostsController#update (for 127.0.0.1 at 2009-11-27 17:05:02) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "post"=>{"name"=>"dddddd", "title"=>"dddddd", "content"=>"ddddd"}, "id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Redirected to http://localhost:3000/posts/5
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/posts/5]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-27 17:05:02) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 297ms (View: 203, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:05:09) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:05:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:08:29) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:08:38) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:08:41) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:08:41) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:08:42) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:08:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:08:42) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:08:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:08:43) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:08:43) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:09:25) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 140ms (View: 62, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-27 17:09:26) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing PostsController#5 (for 127.0.0.1 at 2009-11-27 17:09:31) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "id"=>"edit", "locale"=>"en"}
+
+ActionController::UnknownAction (No action responded to 5. Actions: create, destroy, edit, index, new, set_locale, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PostsController#5 (for 127.0.0.1 at 2009-11-27 17:09:34) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "id"=>"edit", "locale"=>"el"}
+
+ActionController::UnknownAction (No action responded to 5. Actions: create, destroy, edit, index, new, set_locale, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:09:36) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/edit
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-27 17:09:36) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 109ms (View: 47, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:09:38) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/edit
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-27 17:09:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 234ms (View: 31, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:09:39) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/edit
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-27 17:09:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:09:40) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-27 17:09:40) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/edit
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/5/edit]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-27 17:09:44) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/posts/5]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-27 17:09:45) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 125ms (View: 93, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:09:48) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/comments
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-27 17:09:48) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;36;1mPost Load (16.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 187ms (View: 93, DB: 16) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:09:50) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-27 17:09:50) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 93ms (View: 62, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-27 17:09:51) [POST]
+  Parameters: {"post_id"=>"5", "authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Create (0.0ms)[0m   [0mINSERT INTO "comments" ("updated_at", "body", "language", "post_id", "commenter", "created_at") VALUES('2009-11-27 15:09:51', NULL, NULL, 5, NULL, '2009-11-27 15:09:51')[0m
+Redirected to http://localhost:3000/posts/5/comments/11
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-27 17:09:51) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"11"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 11 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/posts/5/comments/11]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:10:01) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments/11
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-27 17:10:01) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"11"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 11 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/5/comments/11]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:10:02) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/comments/11
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-27 17:10:02) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"11"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 11 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/5/comments/11]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:10:03) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments/11
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-27 17:10:03) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"11"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 11 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 297ms (View: 15, DB: 0) | 200 OK [http://localhost/posts/5/comments/11]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-27 17:10:07) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"11"}
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 11 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 110ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/5/comments/11/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:10:17) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/posts/5/comments/11/edit
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-27 17:10:17) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"11"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 11 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;35;1mLanguage Load (16.0ms)[0m   [0mSELECT * FROM "languages" [0m
+Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/posts/5/comments/11/edit]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:10:18) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/posts/5/comments/11/edit
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing CommentsController#edit (for 127.0.0.1 at 2009-11-27 17:10:18) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"11"}
+  [4;36;1mPost Load (16.0ms)[0m   [0;1mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;35;1mComment Load (0.0ms)[0m   [0mSELECT * FROM "comments" WHERE ("comments"."id" = 11 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/edit
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Completed in 109ms (View: 63, DB: 16) | 200 OK [http://localhost/posts/5/comments/11/edit]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-27 17:12:41) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-27 17:12:44) [POST]
+  Parameters: {"post_id"=>"5", "authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"en"}
+  [4;35;1mPost Load (16.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Create (15.0ms)[0m   [0;1mINSERT INTO "comments" ("updated_at", "body", "language", "post_id", "commenter", "created_at") VALUES('2009-11-27 15:12:44', NULL, NULL, 5, NULL, '2009-11-27 15:12:44')[0m
+Redirected to http://localhost:3000/posts/5/comments/12
+Completed in 234ms (DB: 31) | 302 Found [http://localhost/posts/5/comments]
+
+
+Processing CommentsController#show (for 127.0.0.1 at 2009-11-27 17:12:45) [GET]
+  Parameters: {"post_id"=>"5", "id"=>"12"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments"."id" = 12 AND ("comments".post_id = 5)) [0m
+Rendering template within layouts/application
+Rendering comments/show
+Completed in 235ms (View: 16, DB: 0) | 200 OK [http://localhost/posts/5/comments/12]
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2009-11-27 17:12:47) [GET]
+  Parameters: {"post_id"=>"5"}
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 125ms (View: 78, DB: 0) | 200 OK [http://localhost/posts/5/comments]
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-27 17:12:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mPost Load (15.0ms)[0m   [0mSELECT * FROM "posts" WHERE ("posts"."id" = 5) [0m
+Rendering template within layouts/application
+Rendering posts/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM "comments" WHERE ("comments".post_id = 5) [0m
+Completed in 63ms (View: 32, DB: 15) | 200 OK [http://localhost/posts/5]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:12:51) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:12:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+
+ActionView::TemplateError (can't convert Symbol into String) on line #4 of app/views/home/index.html.erb:
+1: <br>
+2: <h3>Hello rails-18n_demo_el</h3>
+3: 
+4: <%= link_to I18n.t 'home.index.my_blog', posts_path %>
+5: <%= link_to "Add_Languages", languages_path %>
+
+    app/views/home/index.html.erb:4
+
+Rendered rescues/_trace (156.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:20:42) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:20:52) [POST]
+  Parameters: {"authenticity_token"=>"0T4OtFUnNsRuUSaUbgNAg/+r1OJvk+NdiHT0MMgzngY=", "locale"=>"el"}
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:20:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:22:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:22:22) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:22:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:22:23) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:22:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:22:33) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:22:36) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:22:36) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:22:37) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 172ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:22:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:22:38) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:23:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:23:52) [GET]
+  [4;36;1mPost Load (0.0ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:23:55) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:23:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:23:56) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:23:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:24:11) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:24:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:24:12) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 218ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-11-27 17:24:16) [GET]
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Rendering template within layouts/application
+Rendering languages/index
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/languages]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:24:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:24:20) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:24:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-27 17:24:23) [GET]
+  [4;35;1mPost Load (0.0ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/posts]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:24:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:24:27) [GET]
+  Parameters: {"locale"=>"en"}
+Redirected to http://localhost:3000/
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/locales/en]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:24:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LocalesController#show (for 127.0.0.1 at 2009-11-27 17:24:28) [GET]
+  Parameters: {"locale"=>"el"}
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/locales/el]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-27 17:24:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing LanguagesController#index (for 127.0.0.1 at 2009-11-27 17:24:31) [GET]
+  [4;36;1mLanguage Load (0.0ms)[0m   [0;1mSELECT * FROM "languages" [0m
+Rendering template within layouts/application
+Rendering languages/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/languages]

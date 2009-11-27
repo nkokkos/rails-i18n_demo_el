@@ -13,12 +13,13 @@ class ApplicationController < ActionController::Base
   def set_locale
     
     # set session for the very first time the app runs
-    session[:locale] = 'en' if session[:locale].nil?
+    session[:locale] = I18n.default_locale if session[:locale].nil?
+    
+    # set locale based on session or default 
+    I18n.locale = session[:locale] || I18n.default_locale
     
     # update session if passed
     session[:locale] = params[:locale] if params[:locale]
-    # set locale based on session or default 
-    I18n.locale = session[:locale] || I18n.default_locale
   
   end
 

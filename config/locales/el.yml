@@ -173,5 +173,12 @@ el:
   layout:
     edit:
       comment: "Τροποποίηση Σχολίου"
+      
+  home:
+    index:
+      my_blog: "Το μπλογκ μου:"
+      add_languages: "Προσθέστε γλώσσες"
+      
+      
 
 

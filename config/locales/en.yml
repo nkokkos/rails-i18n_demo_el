@@ -6,4 +6,12 @@ en:
   layout:
     edit:
       comment: "Edit Comment"
+      
+  home:
+    index:
+      my_blog: "My Blog:"
+      add_languages: "Add Languages"
+      
+      
+           
 
